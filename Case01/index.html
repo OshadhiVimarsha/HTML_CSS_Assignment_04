@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04-Case_01</title>
+    <link rel="stylesheet" href="../assets/lib/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" >
+
+    <style ></style>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        section{
+            height: 100vh;
+            padding: 0;
+            align-content: center;
+        }
+
+        section>div{
+            border-radius: 10px;
+            display: flex;
+            list-style: none;
+            height: 50px;
+            width: 200px;
+            background-color: purple;
+            align-items: center;
+            margin-bottom: 10px;
+            position: relative;
+            left: -150px;
+
+            transition-property: transform ;
+            transition-duration: 1s ;
+            transition-timing-function: ease-out ;
+
+        }
+
+        section>div:hover{
+            transform: translateX(150px);
+        }
+
+        section>div>span{
+            position: absolute;
+            margin-left: 5px;
+            color: white;
+        }
+
+        section>div>img{
+            position: absolute;
+            right: 6px;
+            height: 40px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+<section>
+    <div><span>Menu 1</span><img src="assets/icon/icons8-phonebook-64.png" alt="phonebook-icon"></div>
+    <div><span>Menu 2</span><img src="assets/icon/icons8-ambulance-50.png" alt="icon"></div>
+    <div><span>Menu 3</span><img src="assets/icon/icons8-sim-48.png" alt="icon"></div>
+    <div><span>Menu 4</span><img src="assets/icon/icons8-react-native-50.png" alt="icon"></div>
+    <div><span>Menu 5</span><img src="assets/icon/icons8-cart-30.png" alt="icon"></div>
+</section>
+
+<script src="../assets/lib/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+</body>
+</html>

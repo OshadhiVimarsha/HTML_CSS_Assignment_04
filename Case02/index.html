@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04-Case_02</title>
+
+    <style>
+        body{
+            background-color: #6db0ff;
+        }
+        body>div {
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        div::before{
+            content: "";
+            border: 15px solid white;
+            border-radius: 100%;
+            border-top-color: brown;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        body>div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+
+        div>h3{
+            width: max-content;
+            height: max-content;
+            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <h3>RWAD</h3>
+    </div>
+
+</body>
+</html>
